@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -f ./setup ]
+then
+  ./setup
+fi
+
+#STARTCMD="/usr/bin/skydns -addr=0.0.0.0:53 -systemd=false"
+STARTCMD="/usr/bin/skydns"
+
+
+exec ${STARTCMD}
