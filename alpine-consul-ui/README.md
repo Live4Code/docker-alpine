@@ -1,9 +1,7 @@
-alpine-consul-ui
+alpine-skydns
 ================
 
-An image that contains the [Consul UI][consul] within a Docker container, bundled with Alpine Linux and [s6][s6]. This image is designed to work hand-in-hand with [smebberson/alpine-consul][alpineconsul] that doesnt contain Consul's web.
-
-Read more about [smebberson/alpine-consul][alpineconsul] to learn about how it has been configured, and how to modify the configuration.
+skydns provides the service discovery through DNS
 
 Usage
 -----
