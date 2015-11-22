@@ -20,4 +20,3 @@ ADD root /
 EXPOSE 53 53/udp
 
 WORKDIR /root
-CMD ["/usr/bin/s6-svscan","/etc/s6"]
