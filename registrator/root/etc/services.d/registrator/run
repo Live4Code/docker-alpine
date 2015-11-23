@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv sh
+
+if [ -f ./setup ]
+then
+  ./setup
+fi
+
+STARTCMD="/bin/registrator"
+
+if [ -n "${HOST_IP}" ]
+then
+  STARTCMD="${STARTCMD} -ip ${HOST_IP}"
+fi
+
+
+if [ -n "${BACKEND}" ]
+then
+  STARTCMD="${STARTCMD} $BACKEND"
+fi
+
+exec ${STARTCMD} 
+
